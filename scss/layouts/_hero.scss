@@ -1,0 +1,259 @@
+@use "../abstracts/mixins" as m;
+
+.hero {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #2a8086;
+}
+
+.hero__inner {
+  @include m.display-flex;
+  flex-direction: column;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+.hero__title {
+  margin-block: 16px 18px;
+  font-size: 25px;
+  font-weight: 300;
+  color:  #f3f7f8;
+}
+
+.hero__span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #f3f7f8;
+}
+
+.hero__text {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 20px; 
+  color: #f3f7f8;
+}
+
+.hero__list {
+  @include m.display-flex;
+  @include m.list-unstyled;
+}
+
+.hero__link {
+  padding: 12px 25px 10px 25px;
+  font-size: 14px;
+  letter-spacing: -0.7px;
+  color: #0d444d;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 0px 2px 50px 0px rgba(185, 213, 217, 0.60);
+  @include m.text-decoration-none;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 300px) {
+  .hero__link {
+    padding-inline: 30px;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .hero__link {
+    padding-inline: 35px;
+  }
+}
+
+@media only screen and (min-width: 340px) {
+  .hero__link {
+    padding-inline: 40px;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .hero__link {
+    padding-inline: 45px;
+  }
+}
+
+@media only screen and (min-width: 380px) {
+  .hero__link {
+    padding-inline: 50px;
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .hero__link {
+    padding-inline: 55px;
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  .hero__link {
+    padding-inline: 60px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .hero__link {
+    padding-inline: 65px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .hero__link {
+    padding-inline: 70px;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  .hero__link {
+    padding-inline: 75px;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .hero__link {
+    padding-inline: 80px;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .hero__link {
+    padding-inline: 85px;
+  }
+}
+
+
+
+@media only screen and (min-width: 550px) {
+  
+  .hero__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .hero__img {
+    width: 40%;
+  }
+  
+  .hero__text-wrapper {
+    width: 52%;
+  }
+  
+  .hero__title {
+    @include m.text-style;
+  }
+  
+  .hero__span {
+    @include m.text-style;
+  }
+  
+  .hero__link {
+    padding-inline: 30px;
+    text-align: center;
+  }
+  
+  .hero__text {
+    margin-block: 20px 31px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #f3f7f8;
+  }
+  
+}
+
+@media only screen and (min-width: 580px) {
+  .hero__link {
+    padding-inline: 35px;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  
+  .hero__link {
+    padding-inline: 45px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .hero__link {
+    padding-inline: 50px;
+  }
+}
+
+@media only screen and (min-width: 730px) {
+  .hero__link {
+    padding-inline: 53px;
+  }
+}
+
+@media only screen and (min-width: 755px) {
+  .hero__link {
+    padding-inline: 57px;
+  }
+}
+
+@media only screen and (min-width: 790px) {
+  .hero__link {
+    padding-inline: 60px;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  .hero__link {
+    padding-inline: 63px;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .hero__link {
+    padding-inline: 68px;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .hero__link {
+    padding-inline: 71px;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  .hero__link {
+    padding-inline: 73px;
+  }
+}
+
+@media only screen and (min-width: 910px) {
+  
+  .hero__title {
+    font-size: 64px;
+    font-weight: 300;
+  }
+  
+  .hero__span {
+    font-size: 48px;
+    font-weight: 500;
+    color: #f3f7f8;
+  }
+  
+  .hero__text {
+    line-height: 30px;
+  }
+  
+  .hero__link {
+    display: inline-flex;
+    margin-top: 10px;
+    padding-inline: 84px;
+    background: #fff;
+    border-radius: 100px;
+    box-shadow: 0px 2px 50px 0px #b9d5d999;
+    
+  }
+  
+  .hero-link {
+    display: none;
+  }
+  
+}

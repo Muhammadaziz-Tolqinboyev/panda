@@ -1,0 +1,48 @@
+@use "../abstracts/mixins" as m;
+
+.animals__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: #0d444d;
+  text-transform: uppercase;
+}
+
+.animals__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px;
+  @include m.list-unstyled;
+}
+
+.animals__item {
+  width: 32%;
+  padding: 15px;
+}
+
+.animals__img {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.animals__list-title {
+  font-size: 9px;
+  font-weight: 500;
+  line-height: normal;
+  color: #2d2d2d;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (min-width: 550px) {
+
+  .animals__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .animals__img {
+    width: 105px;
+  }
+}

@@ -1,0 +1,90 @@
+@use "../abstracts/mixins" as m;
+
+.pay {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  padding-top: 49px;
+  padding-bottom: 50px;
+  background-color:  #2a8086;
+  background-image: url("../../images/paybgimg.svg");
+  background-repeat: no-repeat;
+}
+
+.pay__title {
+  margin-bottom: 22px;
+  font-size: 18px;
+  color: #c5e1e5;
+  text-transform: uppercase;
+}
+
+.pay__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 74px;
+  @include m.list-unstyled;
+}
+
+.pay__item {
+  width: 58%;
+  margin-inline: auto;
+}
+
+.pay__img {
+  margin-inline: auto;
+  padding: 37px;
+  background-color: #fff;
+  border-radius: 50%;
+  filter: drop-shadow(0px 2px 50px #b9d5d999);
+}
+
+.pay__desc {
+  margin-block: 8px 0;
+  font-size: 14px;
+  line-height: 20px; 
+  color: #c5e1e5;
+  text-align: center;
+}
+
+.pay__link {
+  display: block;
+  width: 250px;
+  height: 40px;
+  margin-block: 49px 20px;
+  margin-inline: auto;
+  padding: 11px 22px 11px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.7px;
+  color: #0d444d;
+  background-color: #c5e1e5;
+  border-radius: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  @include m.text-decoration-none;
+}
+
+
+@media only screen and (min-width: 550px) {
+  
+  .pay__list {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .pay__title-wrap {
+    @include m.display-flex;
+    margin-bottom: 30px;
+  }
+
+  .pay-linkk {
+    display: block;
+    margin: 0;
+  }
+
+  .pay__link {
+    display: none;
+  }
+}

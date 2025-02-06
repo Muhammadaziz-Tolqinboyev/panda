@@ -1,0 +1,205 @@
+@use "../abstracts/mixins" as m;
+
+.zoo-list {
+  @include m.display-flex-direction;
+  row-gap: 20px;
+  @include m.list-unstyled;
+}
+
+.zoo__title-wrap {
+  @include m.display-flex;
+  margin-bottom: 28px;
+}
+
+
+.zoo-link-table {
+  display: none;
+  margin-top: 0;
+}
+
+.zoo-link {
+  display: block;
+  width: 240px;
+  margin-top: 52px;
+  margin-inline: auto;
+  padding-block: 8px 12px;
+  padding-inline: 38px 22px;
+  font-size: 14px;
+  letter-spacing: 0;
+  color:  #19707d;
+  border-radius: 100px;
+  border: 1px solid  #19707d;
+  text-align: center;
+  text-decoration-line: none;
+}
+
+.zoo-link::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 14px;
+  background-image: url("../images/icons/hearticon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -2px 3px;
+  content: "";
+}
+
+.zoo__title {
+  color: #0d444d;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.zoo-item {
+  position: relative;
+  margin-inline: auto;
+  border-radius: 10.909px;
+  box-shadow: 0px 2.182px 32.727px 0px #0000000f;
+}
+
+.table-zoo-item {
+  display: none;
+}
+
+.zoo-item::after {
+  position: absolute;
+  display: inline-block;
+  top: 16px;
+  right: 19px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icons/frame.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; 
+  content: "";
+}
+
+.desktop-zoo-item {
+  display: none;
+}
+
+.zoo-img {
+  padding-block: 49px 31px;
+  padding-inline: 43px;
+}
+
+.zoo-item-wrap {
+  margin-inline: 15px;
+  padding-bottom: 11px;
+}
+
+.zoo-strong {
+  font-size: 17.455px;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+
+.zoo-desc {
+  font-size: 13.091px;
+  color: #909090;
+}
+
+@media only screen and (min-width: 550px) {
+  .zoo-link-table {
+    display: inline-block;
+    padding-block: 8px 12px;
+    padding-inline: 38px 22px;
+    font-size: 14px;
+    letter-spacing: 0;
+    color:  #19707d;
+    border-radius: 100px;
+    border: 1px solid  #19707d;
+    @include m.text-decoration-none;
+  }
+  
+  .zoo-link {
+    display: none;
+  }
+
+  .zoo-link-table::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    background-image: url("../images/icons/hearticon.svg");
+    background-repeat: no-repeat;
+    background-position: -2px 3px;
+    background-size: contain;
+    content: "";
+  }
+}
+
+@media only screen and (min-width: 552px) {
+
+  .zoo-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .table-zoo-item {
+    display: block;
+  }
+
+  .desktop-zoo-item {
+    display: none;
+  }
+
+  .zoo-item {
+    width: 241px;
+  }
+
+  
+}
+
+
+
+@media only screen and (min-width: 823px) {
+
+  .zoo-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .table-zoo-item {
+    display: block;
+  }
+
+  .desktop-zoo-item {
+    display: block;
+  }
+
+  .zoo-item {
+    width: 241px;
+  }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .zoo-item {
+    width: 29%;
+  }
+
+  .zoo-img {
+    margin-inline: auto;
+    width: 200px;
+  }
+}
+
+
+@media only screen and (min-width: 1600px) {
+
+  .zoo-item {
+    width: 480px;
+  }
+
+  .zoo-img {
+    width: 230px;
+  }
+}
