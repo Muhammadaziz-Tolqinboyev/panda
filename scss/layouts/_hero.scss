@@ -1,9 +1,10 @@
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .hero {
   padding-top: 20px;
   padding-bottom: 30px;
-  background-color: #2a8086;
+  background-color: v.$main-bg-color;
 }
 
 .hero__inner {
@@ -19,20 +20,20 @@
   margin-block: 16px 18px;
   font-size: 25px;
   font-weight: 300;
-  color:  #f3f7f8;
+  color:  v.$main-color;
 }
 
 .hero__span {
   font-size: 22px;
   font-weight: 500;
-  color: #f3f7f8;
+  color: v.$main-color;
 }
 
 .hero__text {
   margin: 0 0 20px;
   font-size: 14px;
   line-height: 20px; 
-  color: #f3f7f8;
+  color: v.$main-color;
 }
 
 .hero__list {
@@ -47,7 +48,7 @@
   color: #0d444d;
   background-color: #fff;
   border-radius: 100px;
-  box-shadow: 0px 2px 50px 0px rgba(185, 213, 217, 0.60);
+  box-shadow: 0px 2px 50px 0px #b9d5d999;
   @include m.text-decoration-none;
   text-transform: uppercase;
 }
@@ -159,7 +160,7 @@
     margin-block: 20px 31px;
     font-size: 14px;
     line-height: 20px;
-    color: #f3f7f8;
+    color: v.$main-color;
   }
   
 }
@@ -235,7 +236,7 @@
   .hero__span {
     font-size: 48px;
     font-weight: 500;
-    color: #f3f7f8;
+    color: v.$main-color;
   }
   
   .hero__text {

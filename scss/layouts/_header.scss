@@ -1,10 +1,11 @@
 @use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
 
 .site-header {
   position: relative;
   z-index: 3;
   padding-block: 8px;
-  background-color: #2A8086;
+  background-color: v.$main-bg-color;
   box-shadow: 0px 1px 10px 0px #12575b40;
 }
 
@@ -38,7 +39,7 @@
   height: 100vh;
   margin-inline: auto;
   padding-top: 32px;
-  background-color: #2A8086;
+  background-color: v.$main-bg-color;
 }
 
 .navbar__item {
@@ -53,7 +54,7 @@
 .navbar__link {
   font-size: 18px;
   font-weight: 700;
-  color: #f3f7f8;
+  color: v.$main-color;
   text-transform: uppercase;
   @include m.text-decoration-none;
 }
@@ -80,7 +81,7 @@
   .site-header {
     position: relative;
     z-index: 3;
-    background-color: #2A8086;
+    background-color: v.$main-bg-color;
     padding-block: 20px;
   }
   
@@ -106,7 +107,7 @@
     height: auto;
     margin-inline: 0;
     padding-top: 0;
-    background-color: #2A8086;
+    background-color: v.$main-bg-color;
   }
   
   .navbar__list {
@@ -123,7 +124,7 @@
   }
   
   .first-link {
-    border-bottom: 1px solid #f3f7f8;
+    border-bottom: 1px solid v.$main-color;
   }
   
   .site-header__sign-wrap {
